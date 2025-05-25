@@ -1,1 +1,12 @@
 @import "../../styles/Mixins.scss";
+
+
+.footer{
+    padding-block:  5rem ;
+
+  &__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(12rem 1fr));
+    gap: 4rem 1rem;
+  }
+}
