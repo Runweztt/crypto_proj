@@ -1,0 +1,20 @@
+@mixin respond($breakpoint){
+    @if $breakpoint == phone {
+        @media screen and (max-width: 37.5rem){
+            @content;
+        }
+    }
+
+    @if $breakpoint == tab-port{
+        @media screen and (max-width:56.25rem) {
+            @content;
+            
+        }
+    }
+    @if $breakpoint == teb-land{
+         @media screen and (max-width: 75rem){
+            @content;
+            
+        }
+    }
+}
