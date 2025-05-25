@@ -1,11 +1,16 @@
 import { useState } from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Hero from "./Components/hero/Hero"
-import Companies from "./Components/companies/Companies"; // ✅ This works if Companies.jsx has a default export
-
+import Companies from "./Components/companies/Companies";
+import Pricing from './Components/pricing/Pricing';
+import Earning from './Components/earning/Earning';
+import Status from './Components/status/Status';
+import Subscribe from "./Components/subscribe/Subscribe"
+import Footer from './Components/footer/Footer';
 
 
 import './App.css'
+import Footer from './Components/footer/Footer';
 
 function App() {
   
@@ -15,6 +20,11 @@ function App() {
       <Navbar/>
       <Hero/>
       <Companies/>
+      <Pricing/>
+      <Earning/>
+      <Status/>
+      <Subscribe/>
+      <Footer/>
 
     </>
   )
