@@ -41,11 +41,11 @@ function Footer() {
             <div className="footer__col">
                 <h3>socials</h3>
                 <div className="footer__icons">
-                     <a href="#"><FaFacebook /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaTwitter /></a>
-            <a href="#"><FaLinkedin /></a>
-            <a href="#"><FaYoutube /></a>
+                     <a href="#" className='footer__icon'><FaFacebook /></a>
+            <a href="#"className='footer__icon'><FaInstagram /></a>
+            <a href="#"className='footer__icon'><FaTwitter /></a>
+            <a href="#"className='footer__icon'><FaLinkedin /></a>
+            <a href="#"className='footer__icon'><FaYoutube /></a>
                 </div>
             </div>
         </div>

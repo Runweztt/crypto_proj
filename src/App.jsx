@@ -7,9 +7,8 @@ import Earning from './Components/earning/Earning';
 import Status from './Components/status/Status';
 import Subscribe from "./Components/subscribe/Subscribe"
 import Footer from './Components/footer/Footer';
-
-
 import './App.css'
+import TradingViewChart from './Components/tradingview/TradingviewChart';
 
 function App() {
   
@@ -19,7 +18,9 @@ function App() {
       <Navbar/>
       <Hero/>
       <Companies/>
+       <TradingViewChart/>
       <Pricing/>
+     
       <Earning/>
       <Status/>
       <Subscribe/>
