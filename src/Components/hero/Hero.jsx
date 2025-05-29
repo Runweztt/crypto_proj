@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import "./Hero.scss"
-import Mob from "../../assets/mob.png";
+import Mob from "../../assets/mob.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

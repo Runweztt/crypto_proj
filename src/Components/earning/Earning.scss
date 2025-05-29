@@ -5,6 +5,8 @@
 .earnings{
     
     padding-block: 5rem;
+    background-color: black;
+    border: 1px solid var(--black-olive);
 
     &__container {
         display: grid;
