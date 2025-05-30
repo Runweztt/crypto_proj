@@ -10,6 +10,7 @@ import Footer from './Components/footer/Footer';
 import TradingViewChart from './Components/tradingview/TradingviewChart';
 import Login from './Components/Register/Login';
 import Register from './Components/Register/Register';
+import Main from './Components/main/Main';
 import './App.css'
 
 function Home() {
@@ -35,6 +36,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/main" element={<Main />} />
       </Routes>
     </>
   );

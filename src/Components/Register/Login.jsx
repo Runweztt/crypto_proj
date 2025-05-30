@@ -8,7 +8,7 @@ import logo from '../../assets/logo.png';
 
 function Login() {
   const [formdata, setFormdata] = useState([])
-  const navigate = useNavigate()
+ const navigate = useNavigate()
 
   const emailInput = useRef(null)
   const passwordInput = useRef(null)
@@ -17,25 +17,25 @@ function Login() {
     const handlesubmit =(e) => {
       e.preventDefault();
        const email = emailInput.current.value.trim()
-       const password = passwordInput.current.value()
+       const password = passwordInput.current.value.trim()
 
        if(!email||!password){
         errors.push(`fill form`)
        }if(password.length < 6){
         errors.push(`enter strong password`)
-       } if(errors,length > 0 ){
+       } if(errors.length > 0 ){
         setFormdata(errors)
         return
        }
 
-       const userdata =(email,password);
+       const userdata ={email,password};
        localStorage.setItem('userinfo', JSON.stringify(userdata))
        setFormdata(`form fill correctly`)
 
        emailInput.current.value = ''
        passwordInput.current.value= ''
 
-       navigate('/Main')
+        navigate('/Main')
     }
   return (
     <>
@@ -43,10 +43,10 @@ function Login() {
 
       <h1>login</h1>
 
-      <form action="" onSubmit={handlesubmit}>
+      <form action="" onSubmit={ handlesubmit}>
         <input type="email" placeholder='enter mail' required ref={emailInput} />
         <input type='password' placeholder='enter password ' required ref={passwordInput}/>
-        <button className='btn' type='submit'>login</button>
+           <button className='btn' type='submit'> login </button>
       </form>
 
     </section>

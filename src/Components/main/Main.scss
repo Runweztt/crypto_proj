@@ -1,0 +1,70 @@
+@import "../../styles/Mixins.scss";
+
+.converter__wrap {
+  padding-block: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  h2 {
+    color: var(--cultured);
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .converter__form {
+    display: flex;
+    flex-direction: column;
+    background: var(--black);
+    padding: 2rem;
+    border-radius: 1rem;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid var(--black--olive);
+
+    select,
+    input {
+      padding: 0.8rem;
+      border-radius: 0.5rem;
+      border: none;
+      outline: none;
+      background: var(--cultured);
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.8rem;
+      border-radius: 0.5rem;
+      background-color: var(--olive);
+      border: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      &:hover {
+        border-color: #2d75d5;
+        background: transparent;
+        color: var(--cultured) !important;
+      }
+    }
+  }
+
+  .converter__result {
+    color: var(--olive);
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  @include respond(phone) {
+    padding: 2rem;
+
+    .converter__form {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+}
