@@ -1,0 +1,62 @@
+@import "../../styles/Mixins.scss";
+
+.form__reg {
+  padding-block: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    background: var(--black);
+    padding: 2rem;
+    border-radius: 1rem;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid var(--black--olive);
+
+    input {
+      padding: 0.8rem;
+      border-radius: 0.5rem;
+      border: none;
+      outline: none;
+      background: var(--cultured);
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.8rem;
+      border-radius: 0.5rem;
+      background-color: var(--olive);
+      border: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      &:hover {
+         border-color: #2d75d5;
+        background: transparent;
+        color: var(--cultured) !important;
+      }
+    }
+  }
+
+  .form__item {
+    color: red;
+    font-weight: bold;
+  }
+
+  @include respond(phone) {
+    padding: 2rem;
+
+    form {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+}
