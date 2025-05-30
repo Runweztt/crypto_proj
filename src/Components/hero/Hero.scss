@@ -2,7 +2,7 @@
 
 
 .hero{
-    background-color: var(--black);
+    background-color: black;
     padding-block: 5rem;
 
     &__container {
@@ -10,7 +10,7 @@
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         gap: 3rem;
-        background-image: url('../../assets/blur-bg.png');
+        background-image: url('../../assets/blur-bg.jpeg');
         background-position: center;
         background-size: 50%;
         background-repeat: no-repeat;

@@ -16,7 +16,7 @@ export const companyInfo = [
 ];
 
 export const pricingInfo = [
-  { image: Icon1, name: "Bitcoin", price: "31,020.564 $" },
-  { image: Icon2, name: "Ethereum", price: "4.4668 $" },
-  { image: Icon3, name: "Ripple", price: "0.6549 $" },
+    { id: "bitcoin", image: Icon1, name: "Bitcoin" },
+  { id: "ethereum", image: Icon2, name: "Ethereum" },
+  { id: "ripple", image: Icon3, name: "Ripple" },
 ];
